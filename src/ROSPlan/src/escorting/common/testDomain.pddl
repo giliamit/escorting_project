@@ -21,7 +21,6 @@
  	(is_on ?v - robot)
 	(allowed_goto_waypoint ?v - robot)
 	(stick ?v - robot ?p - person)
-	(free_robot ?v - robot)
 	(free_person ?p - person)
  
  	;;waypoint predicates
@@ -83,7 +82,6 @@
 		(at start (greeting_waypoint ?wp))
 		(at start (arrived ?p))
 ;;		(at start (staying ?p))
-		(at start (free_robot ?v))
 		(at start (free_person ?p))
 		(over all (is_on ?v))
 		(over all (>= (battery ?v) 0))
@@ -93,7 +91,6 @@
 		(at end (person_greeted ?p)) 
 		(at end (allowed_goto_waypoint ?v))
 		(at end (stick ?v ?p))
-		(at start (not (free_robot ?v)))
 		(at start (not (free_person ?p)))
 		)
 )
@@ -119,7 +116,6 @@
 		(at end (not (person_at ?p ?from)))
 		(at end (person_at ?p ?to))
 		(at end (not (stick ?v ?p)))
-		(at end (free_robot ?v))
 		(at end (free_person ?p))
 		)
 

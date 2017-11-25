@@ -21,8 +21,6 @@
     (free_person person1)
     (free_person person2)
     (free_person person3)
-    (free_robot robot1)
-    (free_robot robot2)
     (general_waypoint wp_dock1)
     (general_waypoint wp_dock2)
     (general_waypoint wp1)

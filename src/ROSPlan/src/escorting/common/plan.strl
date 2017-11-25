@@ -1,7 +1,7 @@
 module plan:
-input SOURCE, a0_complete, a1_complete, a2_complete, a3_complete, a4_complete, a5_complete, a6_complete, a7_complete, a8_complete, a9_complete, a10_complete, a11_complete, a12_complete, a13_complete, a14_complete, a15_complete, a16_complete, a17_complete
-output SINK, a0_dispatch, a1_dispatch, a2_dispatch, a3_dispatch, a4_dispatch, a5_dispatch, a6_dispatch, a7_dispatch, a8_dispatch, a9_dispatch, a10_dispatch, a11_dispatch, a12_dispatch, a13_dispatch, a14_dispatch, a15_dispatch, a16_dispatch, a17_dispatch
-signal e0, e0, e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12, e13, e14, e15, e16, e17 in
+input SOURCE, a0_complete, a1_complete, a2_complete, a3_complete, a4_complete, a5_complete, a6_complete, a7_complete, a8_complete, a9_complete, a10_complete, a11_complete, a12_complete, a13_complete, a14_complete, a15_complete
+output SINK, a0_dispatch, a1_dispatch, a2_dispatch, a3_dispatch, a4_dispatch, a5_dispatch, a6_dispatch, a7_dispatch, a8_dispatch, a9_dispatch, a10_dispatch, a11_dispatch, a12_dispatch, a13_dispatch, a14_dispatch, a15_dispatch
+signal e0, e0, e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12, e13, e14, e15 in
 run action0
  || action0
  || action1
@@ -19,8 +19,6 @@ run action0
  || action13
  || action14
  || action15
- || action16
- || action17
 end
 end module
 
@@ -164,23 +162,5 @@ output e15;
   emit a15_dispatch;
   await a15_complete;
 emit e15;
-end module
-
-module action16:
-input e15;
-output e16;
-  await e15;
-  emit a16_dispatch;
-  await a16_complete;
-emit e16;
-end module
-
-module action17:
-input e16;
-output e17;
-  await e16;
-  emit a17_dispatch;
-  await a17_complete;
-emit e17;
 end module
 
