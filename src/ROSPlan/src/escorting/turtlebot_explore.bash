@@ -290,31 +290,31 @@ sleep 1
 
 
 
-################facts -is_on##########################
-# add fact is_on robot1
-rosservice call /kcl_rosplan/update_knowledge_base "update_type: 0
-knowledge:
-  knowledge_type: 1
-  instance_type: ''
-  instance_name: ''
-  attribute_name: 'is_on'
-  values:
-  - {key: 'v', value: 'robot1'}
-  function_value: 0.0";
-sleep 1
-
-
-# add fact is_on robot2
-rosservice call /kcl_rosplan/update_knowledge_base "update_type: 0
-knowledge:
-  knowledge_type: 1
-  instance_type: ''
-  instance_name: ''
-  attribute_name: 'is_on'
-  values:
-  - {key: 'v', value: 'robot2'}
-  function_value: 0.0";
- sleep 1
+# ################facts -is_on##########################
+# # add fact is_on robot1
+# rosservice call /kcl_rosplan/update_knowledge_base "update_type: 0
+# knowledge:
+#   knowledge_type: 1
+#   instance_type: ''
+#   instance_name: ''
+#   attribute_name: 'is_on'
+#   values:
+#   - {key: 'v', value: 'robot1'}
+#   function_value: 0.0";
+# sleep 1
+# 
+# 
+# # add fact is_on robot2
+# rosservice call /kcl_rosplan/update_knowledge_base "update_type: 0
+# knowledge:
+#   knowledge_type: 1
+#   instance_type: ''
+#   instance_name: ''
+#   attribute_name: 'is_on'
+#   values:
+#   - {key: 'v', value: 'robot2'}
+#   function_value: 0.0";
+#  sleep 1
 
 
 ##################facts - battery ######################
