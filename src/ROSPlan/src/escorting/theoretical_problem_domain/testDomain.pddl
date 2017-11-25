@@ -35,17 +35,17 @@
  	(person_greeted ?p - person)
  	(person_guided ?p - person)
 	(arrived ?p - person)
-;;	(staying ?p - person)
+	(staying ?p - person)
 	(person_at ?p - person ?wp - waypoint)
 
 )
 
 (:functions
  	(battery ?v - robot)
-;;	(total_stay ?p - person)
+	(total_stay ?p - person)
 	(consumption-rate ?v - robot)
 	(charging-rate ?v - robot)
-;;	(staying-rate ?p - person)
+	(staying-rate ?p - person)
 	(distance_x_y ?from ?to - waypoint)
 	(velocity ?v - robot)
 )
@@ -53,8 +53,8 @@
 (:durative-action goto_waypoint
 
 	:parameters (?v - robot ?from ?to - waypoint)
-;;	:duration(= ?duration (/ (distance_x_y ?from ?to) (velocity ?v)))
-	:duration(= ?duration 2)
+	:duration(= ?duration (/ (distance_x_y ?from ?to) (velocity ?v)))
+;;	:duration(= ?duration 2)
 	:condition (and
 		(over all (undocked ?v))
 		(at start (robot_at ?v ?from))
@@ -81,7 +81,7 @@
 		(at start (robot_at ?v ?wp))
 		(at start (greeting_waypoint ?wp))
 		(at start (arrived ?p))
-;;		(at start (staying ?p))
+		(at start (staying ?p))
 		(at start (free_person ?p))
 		(over all (is_on ?v))
 		(over all (>= (battery ?v) 0))
@@ -158,18 +158,18 @@
 		)
 )
 
-;; ;; for the metric function
-;; (:durative-action stay
-;; 	:parameters (?p - person)
-;; 	:duration (>= ?duration 0)
-;; 	:condition 
-;; 		(and
-;; 		(at start (arrived ?p))
-;; 		(at end (person_guided ?p))
-;; 		)
-;; 	:effect (and
-;; 		(increase (total_stay ?p) (* #t (staying-rate)))
-;; 		(at start (staying ?p))
-;; 		)
-;; )
+;; for the metric function
+(:durative-action stay
+	:parameters (?p - person)
+	:duration (>= ?duration 0)
+	:condition 
+		(and
+		(at start (arrived ?p))
+		(at end (person_guided ?p))
+		)
+	:effect (and
+		(increase (total_stay ?p) (* #t (staying-rate)))
+		(at start (staying ?p))
+		)
+)
 )
