@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws_escorting/src/ROSPlan/devel
+
+Name: escorting
+Description: Description of escorting
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/catkin_ws_escorting/src/ROSPlan/devel/lib 
+Requires: 

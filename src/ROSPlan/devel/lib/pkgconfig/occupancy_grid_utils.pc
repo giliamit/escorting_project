@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws_escorting/src/ROSPlan/devel
+
+Name: occupancy_grid_utils
+Description: Description of occupancy_grid_utils
+Version: 0.0.10
+Cflags: -I/home/robot/catkin_ws_escorting/src/ROSPlan/devel/include -I/home/robot/catkin_ws_escorting/src/ROSPlan/src/occupancy_grid_utils/include
+Libs: -L/home/robot/catkin_ws_escorting/src/ROSPlan/devel/lib -lgrid_utils
+Requires: nav_msgs geometry_msgs sensor_msgs laser_geometry roscpp rospy tf tf2_bullet message_runtime

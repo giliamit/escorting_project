@@ -1,0 +1,2 @@
+escorting:occupancy_grid_utils:rosplan/rosplan:rosplan/rosplan_demos:rosplan/rosplan_dispatch_msgs:rosplan/rosplan_interface_mapping:rosplan/rosplan_interface_movebase:rosplan/rosplan_knowledge_base:rosplan/rosplan_knowledge_msgs:rosplan/rosplan_planning_system:rosplan/rosplan_rqt:rosplan_interface_turtlebot2
+-DCATKIN_DEVEL_PREFIX=/home/robot/catkin_ws_escorting/src/ROSPlan/devel -DCMAKE_INSTALL_PREFIX=/home/robot/catkin_ws_escorting/src/ROSPlan/install -G Unix Makefiles

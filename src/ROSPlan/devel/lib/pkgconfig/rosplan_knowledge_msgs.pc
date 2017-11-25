@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws_escorting/src/ROSPlan/devel
+
+Name: rosplan_knowledge_msgs
+Description: Description of rosplan_knowledge_msgs
+Version: 0.0.0
+Cflags: -I/home/robot/catkin_ws_escorting/src/ROSPlan/devel/include
+Libs: -L/home/robot/catkin_ws_escorting/src/ROSPlan/devel/lib 
+Requires: message_generation message_runtime diagnostic_msgs geometry_msgs roscpp rospy std_msgs genmsg

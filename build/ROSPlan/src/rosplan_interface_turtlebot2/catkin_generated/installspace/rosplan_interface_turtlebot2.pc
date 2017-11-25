@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws_escorting/install
+
+Name: rosplan_interface_turtlebot2
+Description: Description of rosplan_interface_turtlebot2
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/catkin_ws_escorting/install/lib -lrosplan_interface_turtlebot2
+Requires: roscpp rospy std_msgs std_srvs diagnostic_msgs geometry_msgs rosplan_dispatch_msgs rosplan_knowledge_msgs actionlib kobuki_msgs tf
