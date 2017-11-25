@@ -31,8 +31,6 @@
     (general_waypoint wp4)
     (general_waypoint wp5)
     (greeting_waypoint wp1)
-    (is_on robot1)
-    (is_on robot2)
     (person_at person1 wp1)
     (person_at person2 wp1)
     (person_at person3 wp1)

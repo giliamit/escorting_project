@@ -40,7 +40,7 @@
   </include>
 
 <!-- ROSPlan -->
-<include file="$(find escorting)/launch/interfaced_planning_system.launch" >
+<include file="/home/robot/catkin_ws_escorting/src/ROSPlan/src/escorting/launch/interfaced_planning_system.launch" >
 </include>
 
 </launch>
